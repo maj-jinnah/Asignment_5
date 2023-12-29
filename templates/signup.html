@@ -14,7 +14,9 @@
         </div>
         {% endfor %}
         <br>
-        <button class="btn btn-warning mb-4">Sign Up</button>
+        <div class='d-flex gap-3 align-items-center'>
+            <button class="btn btn-warning mb-4">Sign Up</button> <p class="text-center">Already have an account? <a href="{% url 'loginpage' %}">Login</a></p>
+        </div>
     </form>
 </div>
 

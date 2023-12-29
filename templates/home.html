@@ -1,30 +1,37 @@
 {% extends "base.html" %} {% load static %} {% block content %}
 
-<br /><br />
-<div class="d-flex flex-wrap p-5 align-items-center">
-    <div class="col-6">
-        <h1>Welcome Apna CarMart</h1>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-            aspernatur est aut voluptatem necessitatibus cumque eveniet laborum
-            ipsum, quidem dolor alias, repellat adipisci numquam id. Iusto,
-            optio dolore? Earum, quos! Commodi quibusdam nulla odit omnis qui
-            laboriosam eveniet exercitationem saepe numquam harum, earum nam
-            quos quidem dolorem perferendis sed placeat similique laborum
-            officiis, voluptatibus illo eos accusamus! Quis ea, architecto nam
-            ipsum doloremque corporis distinctio voluptates perspiciatis aut
-            enim similique illo earum harum illum hic voluptatum eligendi, nulla
-            rem quos sunt quas iste culpa cum. Ex vitae, quod at libero nam
-            itaque neque, amet adipisci, sunt dolore aperiam quas enim.
-        </p>
-    </div>
-    <div class="col-6 p-3">
-        <img
-            style="width: 700px"
-            src="{% static 'homephoto.png' %}"
-            alt="homephoto.png"
-        />
-    </div>
+<div class="container border mt-5 mb-5">
+  <div
+      class="d-flex justify-content-center flex-wrap pt-3 align-items-center mb-3"
+  >
+      <div class="col-6">
+          <h1 class="h2 text-center mb-4">Welcome To Car Mart</h1>
+          <div class="w-75%">
+              <p>
+                  Welcome to Car Mart, your ultimate destination for all
+                  things automotive! Our website is designed with you in mind,
+                  providing a user-friendly interface and a wealth of
+                  information to enhance your car-buying experience.
+              </p>
+              <p>
+                  Explore our extensive inventory of high-quality vehicles,
+                  ranging from sleek sedans to robust SUVs and powerful luxury
+                  cars. Our commitment to customer satisfaction is reflected
+                  in our transparent listings, detailed vehicle descriptions,
+                  and comprehensive photos.
+              </p>
+              <p>
+                  Join the Car Mart community and embark on a
+                  seamless, enjoyable journey to find your dream car. We look
+                  forward to assisting you in making the right choice and
+                  welcoming you into the world of hassle-free car shopping!
+              </p>
+          </div>
+      </div>
+      <div class="col-6">
+          <img src="{% static 'header_car.jpg' %}" class="img-fluid" alt="" />
+      </div>
+  </div>
 </div>
 
 <div class="p-4">
