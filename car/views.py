@@ -112,7 +112,7 @@ def passchange1(request):
             return redirect('profile')
     else:
         pass_form = PasswordChangeForm(request.user)
-    return render(request, 'pass_change.html',{'form' : pass_form, 'type' : 'Using Old Password Change The Password : '})
+    return render(request, 'pass_change.html',{'form' : pass_form, 'type' : 'Change Your Password '})
     
 
 

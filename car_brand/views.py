@@ -13,4 +13,4 @@ def addcarbrand(request):
             return redirect('homepage')
     else:
         form = forms.CarBrandForm()
-    return render(request,'addcar.html',{'form':form})
+    return render(request,'addcarbrand.html',{'form':form})
