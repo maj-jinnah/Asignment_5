@@ -4,11 +4,11 @@
 
 <div>
     <form method="post" action="" style="margin:auto; width:50%; margin-top:40px">
-        <h3>{{type}} Page : </h3>
+        <h3 class="d-flex justify-content-center mt-5">{{type}} Page</h3>
         {% csrf_token %}
         {{form | crispy}}
         <button class="btn btn-warning mb-6">Update Profile</button>
-        <a class="btn btn-primary mb-6" href="{% url "passchange1" %}">Update Password</a>
+        <a class="btn btn-primary mb-6" href="{% url 'passchange1' %}">Update Password</a>
     </form>
 </div>
 {% endblock content %}

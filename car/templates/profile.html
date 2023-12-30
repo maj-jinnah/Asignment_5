@@ -1,18 +1,14 @@
-
-
 {% extends "base.html" %}
 {% load crispy_forms_tags %}
-
-
 {% block content %}
 
-<div>
-    <a class="btn btn-primary mt-4" style="margin-left:40%" href="{% url "updateprofile" %}">Edit Profile</a>
-</div>
+<h1 class="d-flex justify-content-center mt-5">Wellcome to my Profile Page!</h1>
+<a class="btn btn-primary mt-4 mx-5" href="{% url 'updateprofile' %}">Edit Profile</a>
 
-<h1>My Cart : </h1>
+
+<h1 class="d-flex justify-content-center mt-5">My Cart : </h1>
 <div class="p-3">
-    <h4>Total Car Found : {{data | length}}</h4>
+    <h4 class="d-flex justify-content-center">Total Car Found : {{data | length}}</h4>
     <div class="d-flex flex-wrap pt-5">
       {% for car in data %}
       <div class="col-sm-3">
@@ -24,10 +20,10 @@
               alt="{{car.car_name}}"
             />
             <br />
-            <h5>Car Name : {{car.id}}</h5>
+            <h5 class='mt-2'>Car Name : {{car.car_name}}</h5>
             <h5>Price : {{car.car_price}}</h5>
             <h5>Brand Name : {{car.car_brand}}</h5>
-            <button class="btn btn-warning"><a class="text-decoration-none text-dark" href="{% url 'detailview' pk=car.id %}"><b>View Detail</b></a>
+            <button class="btn btn-outline-primary"><a class="text-decoration-none text-dark" href="{% url 'detailview' pk=car.id %}"><b>View Detail</b></a>
             </button>
           </div>
         </div>

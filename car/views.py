@@ -64,8 +64,6 @@ def buynow(request,id):
             car_image=one_car.image, 
             user=request.user, 
         ) 
-        # messages.success(request,'Add Cart Successfully') 
-    # one_car.quantity -=1
         if(one_car.quantity==0):
             messages.success(request,'This Car is Out Of Stock Buy Another One')
         else:

@@ -41,7 +41,7 @@
         {% for brd in brand %}
         <thead>
             <tr>
-                <button class="btn btn-warning">
+                <button class="btn btn-outline-primary">
                     <th class="mx-3">
                         <a
                             class="text-decoration-none text-dark"
@@ -68,10 +68,10 @@
                             alt="{{car.car_name}}"
                         />
                         <br />
-                        <h5>Car Name : {{car.car_name}}</h5>
+                        <h5 class='mt-2'>Car Name : {{car.car_name}}</h5>
                         <h5>Price : {{car.car_price}}</h5>
                         <h5>Brand Name : {{car.car_brand_name.brand_name}}</h5>
-                        <button class="btn btn-warning">
+                        <button class="btn btn-outline-primary">
                             <a
                                 class="text-decoration-none text-dark"
                                 href="{% url 'detailview' car.id %}"

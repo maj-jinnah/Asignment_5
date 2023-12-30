@@ -4,7 +4,7 @@
 
 {% block content %}
 
-<div class="d-flex flex-wrap border rounded-2 bg-white mx-2 my-2">
+<div class="d-flex flex-wrap border rounded-2 bg-white mx-2 my-2 mt-4">
   <div class="">
     <img style="width:400px" src="{{object.image.url}}" class="card-img-top" alt="{{car.car_name}}"/>
   </div>
@@ -16,7 +16,7 @@
       <p><h5>Description : </h5>  {{object.description}}</p>
       <h5>Brand Name : {{object.car_brand_name.brand_name}}</h5><br>
       {% if user.is_authenticated %}
-        <button class="btn btn-warning"><a class="text-decoration-none text-dark" href="{% url 'buynow' object.id %}"><b>Buy Now</b></a></button>
+        <button class="btn btn-outline-primary"><a class="text-decoration-none text-dark" href="{% url 'buynow' object.id %}"><b>Buy Now</b></a></button>
       {% endif %}
   </div>
 
@@ -40,7 +40,7 @@
     <form method="post" class="m-3">
       <h3>Add Comment :</h3>
       {% csrf_token %} {{comment_form | crispy}}
-      <button class="btn btn-warning">Comment</button>
+      <button class="btn btn-outline-primary">Comment</button>
     </form>
   </div>
 
